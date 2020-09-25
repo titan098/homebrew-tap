@@ -5,7 +5,7 @@ class TerraformAT01224 < Formula
   sha256 "11f547db8893abd10861b153311eb9690013249282ea015a023f1ea1f9146b6d"
   head "https://github.com/hashicorp/terraform.git"
 
-  depends_on "go@1.13" => :build
+  depends_on "go" => :build
   depends_on "gox" => :build
 
   conflicts_with "tfenv", :because => "tfenv symlinks terraform binaries"
